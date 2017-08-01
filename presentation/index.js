@@ -12,7 +12,11 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Table,
+  TableRow,
+  TableHeaderItem,
+  TableItem,
 } from "spectacle";
 
 // Import image preloader util
@@ -37,7 +41,7 @@ const images = {
   Itinerary: require('../assets/Itinerary.png'),
   Swimming: require('../assets/swimming2.png'),
   Bicycle: require('../assets/bicycle2.png'),
-  Engage: require('../assets/engage.jpg'),
+  FamilyTime: require('../assets/familyTime.png'),
   singleActivity: require('../assets/singleActivity.png'),
   stepThree: require('../assets/step3.png'),
   About: require('../assets/About.png'),
@@ -70,8 +74,8 @@ export default class Presentation extends React.Component {
             Empowering Parenting :: Eliminating Planning
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgImage={images.Engage}>
-          <Heading size={3} textColor="darkPurple">Strengthening Familes through Quality Engagement</Heading>
+        <Slide transition={["fade"]} bgImage={images.FamilyTime} align='center flex-end'>
+          <Heading size={4} textColor="darkPurple">Strengthening Familes through Quality Engagement</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="orange">
           <Heading size={2} textColor="black">The Problem:</Heading>
@@ -98,12 +102,37 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Activity}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.singleActivity}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Itinerary}></Slide>
+        <Slide transition={["fade"]} bgColor="orange">
+          <Heading size={3} textColor="white">Technology/Languages</Heading>
+          <Table>
+            <TableRow>
+              <TableHeaderItem>Front-End</TableHeaderItem>
+              <TableHeaderItem>Server-Side</TableHeaderItem>
+              <TableHeaderItem>Languages</TableHeaderItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>React/JS</TableItem>
+              <TableItem>Postgresql</TableItem>
+              <TableItem>Javascript</TableItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>HTML/CSS</TableItem>
+              <TableItem>Ruby on Rails</TableItem>
+              <TableItem>Ruby</TableItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>Semantic-UI</TableItem>
+              <TableItem>Ruby Gems</TableItem>
+              <TableItem></TableItem>
+            </TableRow>
+          </Table>
+        </Slide>
         <Slide transition={["fade"]} bgColor="blue">
           <Heading size={3} textColor="white">Come see our Booth!!</Heading>
           <Heading size={4} textColor="white">We're giving away a Tesla</Heading>
         </Slide>
 
-       
+
       </Deck>
 
     );
