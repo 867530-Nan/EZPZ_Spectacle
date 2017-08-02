@@ -33,11 +33,12 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   RegistrationOne: require('../assets/registerOne.png'),
   RegistrationTwo: require('../assets/registerTwo.png'),
+  RegistrationTwoDropdown: require('../assets/registrationTwoDropdown.png'),
   datePicker: require('../assets/datePicker.png'),
   Home: require('../assets/Home.png'),
   Children: require('../assets/Children.png'),
   Activity: require('../assets/Activity.jpg'),
-  About: require('../assets/About.png'),
+  About: require('../assets/about.png'),
   Itinerary: require('../assets/Itinerary.png'),
   Swimming: require('../assets/swimming2.png'),
   Bicycle: require('../assets/bicycle2.png'),
@@ -91,28 +92,17 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="black">The Problem:</Heading>
           <Heading size={3} textColor="white">Parent - Child interaction decreased from 28 to 16 hours per month</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="white" textColor="purple">
-          <Heading size={2} textColor="orange">The EZPZ Solution:</Heading>
-          <Heading size={4} textColor="blue">One-stop Community Calendar</Heading>
-          <List>
-            <ListItem>Community Rec Centers</ListItem>
-            <ListItem>City &amp; County Fesitvals</ListItem>
-            <ListItem>Museums</ListItem>
-            <ListItem>Farmers Markets</ListItem>
-            <ListItem>Community Events</ListItem>
-            <ListItem>Everywhere Inbetween</ListItem>
-          </List>
-        </Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Home}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.About}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.RegistrationOne}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.RegistrationTwo}></Slide>
+        <Slide transition={["fade"]} bgColor="orange" bgImage={images.RegistrationTwoDropdown}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.stepThree}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.datePicker}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Activity}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.singleActivity}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Itinerary}></Slide>
-        <Slide transition={["fade"]} bgColor="orange">
+        <Slide transition={["fade"]} bgColor="blue">
           <Heading size={3} textColor="white">Technology/Languages</Heading>
           <Table>
             <TableRow>
@@ -134,6 +124,17 @@ export default class Presentation extends React.Component {
               <TableItem>Semantic-UI</TableItem>
               <TableItem>Ruby Gems</TableItem>
               <TableItem></TableItem>
+            </TableRow>
+          </Table>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="orange">
+          <Heading size={3} textColor="white">Challenges</Heading>
+          <Table>
+            <TableRow>
+              <TableItem>Locating Activity Information</TableItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>First Group Project Of This Scale</TableItem>
             </TableRow>
           </Table>
         </Slide>
