@@ -92,6 +92,10 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="black">The Problem:</Heading>
           <Heading size={3} textColor="white">Parent - Child interaction decreased from 28 to 16 hours per month</Heading>
         </Slide>
+        <Slide transition={["fade"]} bgColor="white" textColor="purple">
+          <Heading size={2} textColor="orange">The EZPZ Solution:</Heading>
+          <Heading size={4} textColor="blue">One-stop Community Calendar</Heading>
+        </Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Home}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.About}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.RegistrationOne}></Slide>
