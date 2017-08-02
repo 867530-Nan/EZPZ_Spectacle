@@ -53,8 +53,9 @@ const styles = {
 
   },
   smiles: {
-    marginLeft: "700px",
+    marginLeft: "650px",
     paddingTop: "25px",
+    fontWeight: "300",
   }
 }
 
@@ -86,7 +87,7 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgImage={images.FamilyTime} align='center flex-start'>
-          <Heading size={5} textColor="darkPurple" style={styles.smiles}>Strengthening Familes through Quality Engagement</Heading>
+          <Heading size={2} textColor="darkPurple" style={styles.smiles}>Strengthening Families Through Quality Engagement</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="orange">
           <Heading size={2} textColor="black">The Problem:</Heading>
