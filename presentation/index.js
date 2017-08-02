@@ -44,6 +44,7 @@ const images = {
   Bicycle: require('../assets/bicycle2.png'),
   FamilyTime: require('../assets/familyTime.png'),
   singleActivity: require('../assets/singleActivity.png'),
+  singleActivityTwo: require('../assets/singleActivityTwo.png'),
   stepThree: require('../assets/step3.png'),
   About: require('../assets/About.png'),
 };
@@ -105,6 +106,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.stepThree}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.datePicker}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Activity}></Slide>
+        <Slide transition={["fade"]} bgColor="orange" bgImage={images.singleActivityTwo}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.singleActivity}></Slide>
         <Slide transition={["fade"]} bgColor="orange" bgImage={images.Itinerary}></Slide>
         <Slide transition={["fade"]} bgColor="blue">
@@ -143,6 +145,7 @@ export default class Presentation extends React.Component {
             </TableRow>
           </Table>
         </Slide>
+        <Slide transition={["fade"]} bgColor="orange" bgImage={images.Itinerary}></Slide>
         <Slide transition={["fade"]} bgColor="blue">
           <Heading size={3} textColor="white">Come see our Booth!!</Heading>
           <Heading size={4} textColor="white">We're giving away a Tesla</Heading>
