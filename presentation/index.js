@@ -47,6 +47,16 @@ const images = {
   About: require('../assets/About.png'),
 };
 
+const styles = {
+  family: {
+
+  },
+  smiles: {
+    marginLeft: "700px",
+    paddingTop: "25px",
+  }
+}
+
 preloader(images);
 
 const theme = createTheme({
@@ -74,8 +84,8 @@ export default class Presentation extends React.Component {
             Empowering Parenting :: Eliminating Planning
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgImage={images.FamilyTime} align='center flex-end'>
-          <Heading size={4} textColor="darkPurple">Strengthening Familes through Quality Engagement</Heading>
+        <Slide transition={["fade"]} bgImage={images.FamilyTime} align='center flex-start'>
+          <Heading size={5} textColor="darkPurple" style={styles.smiles}>Strengthening Familes through Quality Engagement</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="orange">
           <Heading size={2} textColor="black">The Problem:</Heading>
