@@ -47,6 +47,7 @@ const images = {
   singleActivityTwo: require('../assets/singleActivityTwo.png'),
   stepThree: require('../assets/step3.png'),
   About: require('../assets/About.png'),
+  AddyFamily: require('../assets/addyfamily.jpg'),
 };
 
 const styles = {
@@ -145,7 +146,7 @@ export default class Presentation extends React.Component {
             </TableRow>
           </Table>
         </Slide>
-        <Slide transition={["fade"]} bgColor="orange" bgImage={images.Itinerary}></Slide>
+        <Slide transition={["fade"]} bgColor="orange" bgImage={images.AddyFamily}></Slide>
         <Slide transition={["fade"]} bgColor="blue">
           <Heading size={3} textColor="white">Come see our Booth!!</Heading>
           <Heading size={4} textColor="white">We're giving away a Tesla</Heading>
